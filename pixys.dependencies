@@ -1,0 +1,31 @@
+[
+  {
+    "repository" : "vendor_realme_sdm710-common",
+    "target_path": "vendor/realme/RMX1851",
+    "branch": "eleven",
+    "remote": "pixel-devices-blobs"
+  },
+  {
+    "repository": "kernel_realme_sdm710",
+    "target_path": "kernel/realme/sdm710",
+    "branch": "eleven"
+  },
+  {
+    "repository": "arter97/arm64-gcc",
+    "target_path": "prebuilts/arm64-gcc",
+    "branch": "master",
+    "remote": "github"
+  },
+  {
+    "repository": "AOSPA/android_device_qcom_common",
+    "target_path": "device/qcom/common",
+    "branch": "ruby",
+    "remote": "github"
+   },
+   {
+    "repository": "ThankYouMario/proprietary_vendor_qcom_common",
+    "target_path": "vendor/qcom/common",
+    "branch": "ruby",
+    "remote": "github"
+   }
+]

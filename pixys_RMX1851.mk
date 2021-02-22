@@ -15,18 +15,18 @@
 #
 
 # Specify arch for gapps
-TARGET_GAPPS_ARCH=arm64
+TARGET_GAPPS_ARCH := arm64
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common LOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
 $(call inherit-product, device/realme/RMX1851/device.mk)
 
-PRODUCT_NAME := aosp_RMX1851
+PRODUCT_NAME := pixys_RMX1851
 PRODUCT_DEVICE := RMX1851
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_BRAND := realme
@@ -36,3 +36,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-realme
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="RMX1851"
+
+BUILD_FINGERPRINT :="Realme/RMX1851/RMX1851:10/QKQ1.190918.001/1588147575:user/release-keys"
+
+PRIVATE_BUILD_DESC :="RMX1851-user 10 QKQ1.190918.001 1588147575 release-keys"
