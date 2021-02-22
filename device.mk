@@ -16,6 +16,7 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 29
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2244
 TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
@@ -137,7 +138,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.realme_sdm710
+    android.hardware.usb@1.0-service.basic
 
 # WiFi
 PRODUCT_COPY_FILES += \
