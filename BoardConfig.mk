@@ -85,7 +85,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # Sepolicy
-include device/qcom/sepolicy/SEPolicy.mk
+include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 SELINUX_IGNORE_NEVERALLOWS := true
 
